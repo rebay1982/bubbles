@@ -6,13 +6,16 @@ import (
 	tea "github.com/charmbracelet/bubbletea"
 )
 
-type CommandMap map[string]string
-
-type CommandBar struct {
-	commands CommandMap
+type Command struct {
+	Key   string
+	Description string
 }
 
-func NewCommandBar(commands CommandMap) tea.Model {
+type CommandBar struct {
+	commands []Command
+}
+
+func NewCommandBar(commands []Command) tea.Model {
 	return CommandBar{
 		commands: commands,
 	}
@@ -29,8 +32,8 @@ func (c CommandBar) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 func (c CommandBar) View() string {
 	var out string
-	for k, v := range c.commands {
-		out += fmt.Sprintf(" %s:%s\t", k, v)
+	for _, cmd := range c.commands {
+		out += fmt.Sprintf(" %s:%s", cmd.Key, cmd.Description)
 	}
 
 	return out

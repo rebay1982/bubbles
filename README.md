@@ -1,4 +1,8 @@
 # bubbles
+
+[![Build](https://github.com/rebay1982/bubbles/actions/workflows/go.yml/badge.svg)](https://github.com/rebay1982/bubbles/actions/workflows/go.yml)
+[![Latest](https://github.com/rebay1982/bubbles/actions/workflows/go.yml/badge.svg?event=release)](https://github.com/rebay1982/bubbles/actions/workflows/go.yml)
+
 Collection of Bubbles created to use with BubbleTea
 
 ## CommandBar

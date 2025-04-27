@@ -5,9 +5,11 @@ import (
 )
 
 func Test_Single_Command_View(t *testing.T) {
-	command := CommandMap{"q": "quit"}
-	commandbar := NewCommandBar(command)
-	want := " q:quit\t"
+	commands := []Command{
+		Command{Key: "q", Description: "quit"},
+	}
+	commandbar := NewCommandBar(commands)
+	want := " q:quit"
 
 	got := commandbar.View()
 
@@ -17,9 +19,13 @@ func Test_Single_Command_View(t *testing.T) {
 }
 
 func Test_Multi_Command_View(t *testing.T) {
-	command := CommandMap{"q": "quit", "j": "down", "k": "up"}
-	commandbar := NewCommandBar(command)
-	want := " j:down\t k:up\t q:quit\t"
+	commands := []Command{
+		Command{Key: "q", Description: "quit"},
+		Command{Key: "j", Description: "down"},
+		Command{Key: "k", Description: "up"},
+	}
+	commandbar := NewCommandBar(commands)
+	want := " q:quit j:down k:up"
 
 	got := commandbar.View()
 
@@ -29,8 +35,8 @@ func Test_Multi_Command_View(t *testing.T) {
 }
 
 func Test_Empty_Command_View(t *testing.T) {
-	command := CommandMap{}
-	commandbar := NewCommandBar(command)
+	commands := []Command{}
+	commandbar := NewCommandBar(commands)
 	want := ""
 
 	got := commandbar.View()
