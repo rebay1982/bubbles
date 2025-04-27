@@ -3,7 +3,6 @@ package log
 import (
 	"fmt"
 	"strings"
-	"time"
 
 	"github.com/rebay1982/bubbles/ansi"
 
@@ -132,10 +131,8 @@ func (l Log) computeViewportPercentage() int {
 }
 
 func (l *Log) Push(message string) {
-	currentTime := time.Now().Format("2006-01-02T15:04:05.000 -0700")
-
 	index := l.getBufferIndex()
-	l.lines[index] = fmt.Sprintf("%s: %s", string(currentTime), message)
+	l.lines[index] = fmt.Sprintf("%s", message)
 
 	l.appendIndex++
 
