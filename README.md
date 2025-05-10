@@ -1,8 +1,8 @@
 # bubbles
 
-[![Build](https://github.com/rebay1982/bubbles/actions/workflows/go.yml/badge.svg)](https://github.com/rebay1982/bubbles/actions/workflows/go.yml)
+[![Build](https://github.com/rebay1982/bubbles/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/rebay1982/bubbles/actions/workflows/go.yml)
 [![Nightly](https://github.com/rebay1982/bubbles/actions/workflows/nightly.yml/badge.svg)](https://github.com/rebay1982/bubbles/actions/workflows/nightly.yml)
-[![Latest](https://github.com/rebay1982/bubbles/actions/workflows/go.yml/badge.svg?event=release)](https://github.com/rebay1982/bubbles/actions/workflows/go.yml)
+[![Release](https://github.com/rebay1982/bubbles/actions/workflows/release.yml/badge.svg?event=release)](https://github.com/rebay1982/bubbles/releases)
 
 Collection of Bubbles created to use with BubbleTea
 
