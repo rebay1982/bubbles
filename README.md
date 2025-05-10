@@ -1,6 +1,6 @@
 # bubbles
 
-[![Build](https://github.com/rebay1982/bubbles/actions/workflows/build.yml/badge.svg)](https://github.com/rebay1982/bubbles/actions/workflows/build.yml)
+[![Main](https://github.com/rebay1982/bubbles/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/rebay1982/bubbles/actions/workflows/main.yml)
 
 Collection of Bubbles created to use with BubbleTea
 
