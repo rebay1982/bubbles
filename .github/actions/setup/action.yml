@@ -1,0 +1,15 @@
+name: 'Shared Setup'
+description: 'Shared setup steps to building and testing golang projects'
+
+inputs:
+  go-version:
+    description: 'Go version to use'
+    required: true
+
+runs:
+  using: "composite"
+
+  steps:
+    - uses: actions/setup-go@v5
+      with:
+        go-version: ${{ inputs.go-version }}
