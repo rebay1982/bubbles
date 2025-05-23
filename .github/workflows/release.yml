@@ -1,6 +1,8 @@
-name: Main
+name: Release
 
-on: [push, pull_request]
+on:
+  release:
+    types: [published]
 
 jobs:
   setup:
@@ -25,7 +27,9 @@ jobs:
             exit 1
           fi
       - name: Build
-        run: make build
+        run: |
+          go mod tidy 
+          make build
 
   test:
     runs-on: ubuntu-latest
@@ -34,5 +38,3 @@ jobs:
       - uses: actions/checkout@v4
       - name: Test
         run: make test
-
-

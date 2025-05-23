@@ -7,7 +7,7 @@ import (
 )
 
 type Command struct {
-	Key   string
+	Key         string
 	Description string
 }
 
