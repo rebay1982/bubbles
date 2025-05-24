@@ -56,6 +56,8 @@ jobs:
           git checkout main
           git pull origin main
 
+      # Fix this: Requires the github token to have read-write access to the repository.
+      #           This presents a security issue.
       - name: Update README Tag
         run: |
           sed -i "s/<LATEST_TAG>/${LATEST_TAG}/g" README.md
