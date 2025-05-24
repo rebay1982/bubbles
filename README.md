@@ -1,7 +1,7 @@
 # bubbles
 
 [![Main](https://github.com/rebay1982/bubbles/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/rebay1982/bubbles/actions/workflows/main.yml)
-[![Release](https://github.com/rebay1982/bubbles/actions/workflows/release.yml/badge.svg?tag=<LATEST_TAG>)](https://github.com/rebay1982/bubbles/actions/workflows/release.yml)
+[![Release](https://github.com/rebay1982/bubbles/actions/workflows/release.yml/badge.svg?tag=v0.0.1)](https://github.com/rebay1982/bubbles/actions/workflows/release.yml)
 
 Collection of Bubbles created to use with BubbleTea
 
